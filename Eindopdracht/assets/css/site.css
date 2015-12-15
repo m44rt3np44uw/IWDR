@@ -74,12 +74,11 @@ h1 {
     width: 100%;
 }
 
-/* === HEADER === */
-.logo {
-    max-width: 250px;
-}
-
 /* === VIDEO === */
+
+#video {
+    margin-top: 50px;
+}
 
 #video .video {
     width: inherit;
@@ -90,6 +89,10 @@ h1 {
 #info {
     margin-top: 150px;
     margin-bottom: 150px;
+}
+
+#info .logo {
+    max-width: 250px;
 }
 
 #info a {
@@ -111,10 +114,16 @@ h1 {
     text-decoration: none;
     border-radius: 5px;
     text-transform: uppercase;
+    border: solid 2px orange;
+}
+
+#tickets a:hover {
+    color: orange;
+    background-color: black;
 }
 
 #tickets p {
-    margin-top: 20px;
+    margin-top: 25px;
     color: darkgray;
     font-size: 12px;
 }
@@ -166,7 +175,13 @@ footer img {
     background-color: white;
     border-radius: 100%;
     width: 65px;
-    border: solid 2px white;
+    border: solid 2px orange;
+}
+
+footer .twitter {
+    width: 65px;
+    height: 65px;
+    background-color: white;
 }
 
 footer a:last-child img {
@@ -189,6 +204,10 @@ footer p:last-of-type {
     margin-bottom: 50px;
     color: darkgray;
     font-size: 12px;
+}
+
+footer p:last-of-type a {
+    color: darkgray;
 }
 
 footer .dash {
@@ -232,6 +251,10 @@ footer .dash {
     }
 
     /* === VIDEO === */
+
+    #video {
+        margin-top: 0;
+    }
 
     #video .video {
         height: 500px;
@@ -293,6 +316,10 @@ footer .dash {
     }
 
     /* === VIDEO === */
+
+    #video {
+        margin-top: 0;
+    }
 
     #video .video {
         height: 400px;
