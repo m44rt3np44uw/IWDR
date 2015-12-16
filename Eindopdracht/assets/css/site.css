@@ -23,7 +23,7 @@ body {
     line-height: 30px;
 }
 
-h1, h2, p {
+h1, h2, h4, p {
     text-align: center;
 }
 
@@ -127,10 +127,11 @@ iframe {
     background-color: black;
 }
 
-#tickets p {
+#tickets p, #tickets h4 {
     margin-top: 25px;
     color: darkgray;
     font-size: 12px;
+    font-weight: normal;
 }
 
 /* === ROUTE === */
@@ -163,12 +164,13 @@ iframe {
     border-radius: 5px;
 }
 
-#instagram p {
+#instagram p, #instagram h4 {
     color: darkgray;
     font-size: 12px;
+    font-weight: normal;
 }
 
-#instagram p a {
+#instagram p a, #instagram h4 a {
     color: orange;
     text-decoration: none;
 }
