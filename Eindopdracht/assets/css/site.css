@@ -106,6 +106,10 @@ iframe {
     display: block;
 }
 
+#info a:hover {
+    text-decoration: underline;
+}
+
 /* === TICKETS === */
 
 #tickets {
@@ -153,6 +157,10 @@ iframe {
     text-decoration: none;
 }
 
+#route a:hover {
+    text-decoration: underline;
+}
+
 /* === INSTAGRAM === */
 
 #instagram {
@@ -175,6 +183,10 @@ iframe {
     text-decoration: none;
 }
 
+#instagram p a:hover, #instagram h4 a:hover {
+    text-decoration: underline;
+}
+
 /* === FOOTER === */
 
 footer {
@@ -184,6 +196,10 @@ footer {
 footer a {
     color: orange;
     text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 footer img {
@@ -241,6 +257,10 @@ footer .dash {
     text-decoration: none;
 }
 
+#map a:hover {
+    text-decoration: underline;
+}
+
 #map .map {
     border: 0;
     width: 75%;
@@ -252,9 +272,18 @@ footer .dash {
 
 @media screen and (min-width: 1024px) {
 
+    /* === GENERAL === */
+
     .container {
         min-width: 1024px;
         max-width: 1250px;
+    }
+
+    /* === INFO === */
+
+    #info {
+        margin-left: 140px;
+        margin-right: 140px;
     }
 
     /* === VIDEO === */
