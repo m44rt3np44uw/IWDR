@@ -139,6 +139,10 @@ nav ul li:hover > a {
     margin-top: 150px;
 }
 
+#info.laatste {
+    margin-bottom: 75px;
+}
+
 #info .logo {
     max-width: 250px;
 }
