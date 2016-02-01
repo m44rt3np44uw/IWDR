@@ -1,2 +1,8 @@
-rm s1094220.zip
-zip -r s1094220.zip Eindopdracht/
+if test -e s1094220.zip; then
+    rm s1094220.zip
+    echo "De oude zip is verwijderd!"
+fi
+
+if zip -r -q s1094220.zip Eindopdracht/; then
+    echo "Het zippen is gelukt!"
+fi
