@@ -2,13 +2,14 @@
 
     1. = GLOBAL
     2. = GRID
-    3. = VIDEO
-    4. = INFO
-    5. = TICKETS
-    6. = ROUTE
-    7. = INSTAGRAM
-    8. = FOOTER
-    9. = MAP
+    3. = MENU
+    4. = VIDEO
+    5. = INFO
+    6. = TICKETS
+    7. = ROUTE
+    8. = INSTAGRAM
+    9. = FOOTER
+   10. = MAP
 
   === */
 
@@ -18,7 +19,6 @@
 body {
     background-color: black;
     color: white;
-
     font-family: sans-serif;
     line-height: 30px;
 }
@@ -28,7 +28,7 @@ h1, h2, h4, p {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 38px;
 }
 
 iframe {
@@ -79,11 +79,55 @@ iframe {
     width: 100%;
 }
 
-/* === VIDEO === */
+/* === MENU === */
 
-#video {
-    margin-top: 50px;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
+
+nav input[type=checkbox], nav label.menu {
+    display: none;
+}
+
+nav ul li a, nav label.menu {
+    border: solid 1px orange;
+    float: left;
+    background-color: orange;
+    width: 15%;
+    margin-right: 1%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li:first-child {
+    margin-left: 1.75%;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover, nav label.menu:hover {
+    background-color: black;
+    color: orange;
+}
+
+nav ul li:hover > a {
+    color: orange;
+}
+
+/* === VIDEO === */
 
 #video .video {
     width: inherit;
@@ -93,7 +137,10 @@ iframe {
 
 #info {
     margin-top: 150px;
-    margin-bottom: 150px;
+}
+
+#info.laatste {
+    margin-bottom: 75px;
 }
 
 #info .logo {
@@ -113,7 +160,8 @@ iframe {
 /* === TICKETS === */
 
 #tickets {
-    margin-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 100px;
 }
 
 #tickets a {
@@ -140,10 +188,6 @@ iframe {
 
 /* === ROUTE === */
 
-#route {
-    margin-bottom: 75px;
-}
-
 .container > #route:first-child {
     margin-top: 150px;
 }
@@ -164,7 +208,8 @@ iframe {
 /* === INSTAGRAM === */
 
 #instagram {
-    margin-bottom: 175px;
+    padding-top: 75px;
+    margin-bottom: 125px;
 }
 
 #instagram img {
@@ -189,16 +234,12 @@ iframe {
 
 /* === FOOTER === */
 
-footer {
-
-}
-
 footer a {
     color: orange;
     text-decoration: none;
 }
 
-footer a:hover {
+footer .row:last-child a:hover {
     text-decoration: underline;
 }
 
@@ -206,7 +247,6 @@ footer img {
     background-color: white;
     border-radius: 100%;
     width: 65px;
-    border: solid 2px orange;
 }
 
 footer .twitter {
@@ -275,13 +315,19 @@ footer .dash {
     /* === GENERAL === */
 
     .container {
-        min-width: 1024px;
+        min-width: 1004px;
         max-width: 1250px;
     }
 
     /* === INFO === */
 
     #info {
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+
+    /* === ROUTE === */
+    #route {
         margin-left: 140px;
         margin-right: 140px;
     }
@@ -299,8 +345,16 @@ footer .dash {
 
     /* === GENERAL === */
 
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
     .container {
-        min-width: 800px;
+        min-width: 780px;
         max-width: 1023px;
     }
 
@@ -312,6 +366,13 @@ footer .dash {
         margin-left: 0;
     }
 
+    /* === INFO === */
+    #info {
+        margin-top: 50px;
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+
     /* === VIDEO === */
 
     #video {
@@ -320,9 +381,14 @@ footer .dash {
 
     #video .video {
         height: 500px;
+        width: 90%;
     }
 
     /* === INSTAGRAM === */
+
+    #instagram {
+        padding-top: 50px;
+    }
 
     #instagram .row {
         width: 65%;
@@ -334,6 +400,12 @@ footer .dash {
     footer img {
         width: 45px;
     }
+
+    /* === ROUTE === */
+    #route {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
 }
 
 /* === MEDIA 0px - 799px === */
@@ -343,11 +415,13 @@ footer .dash {
     /* === GENERAL === */
 
     h1 {
-        line-height: 60px;
+        font-size: 25px;
+        line-height: 40px;
     }
 
     h2 {
-        line-height: 40px;
+        font-size: 20px;
+        line-height: 35px;
     }
 
     p, a {
@@ -362,10 +436,51 @@ footer .dash {
         display: block;
     }
 
+    /* === MENU === */
+
+    nav label.menu {
+        display: inline;
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-left: 10%;
+        margin-top: 25px;
+    }
+
+    nav {
+        margin-bottom: 35px;
+    }
+
+    nav ul {
+        padding-left: 10%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    nav label.menu {
+        width: 81%;
+    }
+
+    nav ul li a {
+        width: 90%;
+    }
+
+    input[type=checkbox]:checked ~ ul li
+    {
+        display: inline;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    nav ul li:first-child {
+        margin-left: 0;
+    }
+
     /* === GRID === */
 
     .container {
-        min-width: 320px;
+        min-width: 300px;
         max-width: 799px;
     }
 
@@ -385,19 +500,20 @@ footer .dash {
 
     #video .video {
         height: 400px;
+        width: 90%;
     }
 
     /* === INFO === */
 
     #info {
         margin-top: 75px;
-        margin-bottom: 75px;
     }
 
     /* === TICKETS === */
 
     #tickets {
-        margin-bottom: 50px;
+        padding-top: 75px;
+        padding-bottom: 50px;
     }
 
     /* === ROUTE === */
@@ -408,7 +524,7 @@ footer .dash {
     /* === INSTAGRAM === */
 
     #instagram {
-        margin-bottom: 75px;
+        margin-bottom: 50px;
     }
 
     #instagram .row {
@@ -424,6 +540,10 @@ footer .dash {
 
     footer img {
         width: 34px;
+    }
+
+    footer p, footer p a {
+        font-size: 10px !important;
     }
 
     /* === MAP === */
