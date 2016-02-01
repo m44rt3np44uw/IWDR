@@ -28,7 +28,7 @@ h1, h2, h4, p {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 38px;
 }
 
 iframe {
@@ -129,10 +129,6 @@ nav ul li:hover > a {
 
 /* === VIDEO === */
 
-#video {
-    margin-top: 50px;
-}
-
 #video .video {
     width: inherit;
 }
@@ -188,10 +184,6 @@ nav ul li:hover > a {
 
 /* === ROUTE === */
 
-#route {
-    margin-bottom: 75px;
-}
-
 .container > #route:first-child {
     margin-top: 150px;
 }
@@ -212,7 +204,8 @@ nav ul li:hover > a {
 /* === INSTAGRAM === */
 
 #instagram {
-    margin-bottom: 175px;
+    padding-top: 75px;
+    margin-bottom: 125px;
 }
 
 #instagram img {
@@ -318,13 +311,19 @@ footer .dash {
     /* === GENERAL === */
 
     .container {
-        min-width: 1024px;
+        min-width: 1004px;
         max-width: 1250px;
     }
 
     /* === INFO === */
 
     #info {
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+
+    /* === ROUTE === */
+    #route {
         margin-left: 140px;
         margin-right: 140px;
     }
@@ -342,13 +341,16 @@ footer .dash {
 
     /* === GENERAL === */
 
-    body {
-        margin-left: 25px;
-        margin-right: 25px;
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
     }
 
     .container {
-        min-width: 800px;
+        min-width: 780px;
         max-width: 1023px;
     }
 
@@ -360,6 +362,13 @@ footer .dash {
         margin-left: 0;
     }
 
+    /* === INFO === */
+    #info {
+        margin-top: 50px;
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+
     /* === VIDEO === */
 
     #video {
@@ -368,9 +377,14 @@ footer .dash {
 
     #video .video {
         height: 500px;
+        width: 90%;
     }
 
     /* === INSTAGRAM === */
+
+    #instagram {
+        padding-top: 50px;
+    }
 
     #instagram .row {
         width: 65%;
@@ -382,6 +396,12 @@ footer .dash {
     footer img {
         width: 45px;
     }
+
+    /* === ROUTE === */
+    #route {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
 }
 
 /* === MEDIA 0px - 799px === */
@@ -390,17 +410,14 @@ footer .dash {
 
     /* === GENERAL === */
 
-    body {
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-
     h1 {
-        line-height: 60px;
+        font-size: 25px;
+        line-height: 40px;
     }
 
     h2 {
-        line-height: 40px;
+        font-size: 20px;
+        line-height: 35px;
     }
 
     p, a {
@@ -459,7 +476,7 @@ footer .dash {
     /* === GRID === */
 
     .container {
-        min-width: 320px;
+        min-width: 300px;
         max-width: 799px;
     }
 
@@ -479,6 +496,7 @@ footer .dash {
 
     #video .video {
         height: 400px;
+        width: 90%;
     }
 
     /* === INFO === */
@@ -502,7 +520,7 @@ footer .dash {
     /* === INSTAGRAM === */
 
     #instagram {
-        margin-bottom: 75px;
+        margin-bottom: 50px;
     }
 
     #instagram .row {
@@ -518,6 +536,10 @@ footer .dash {
 
     footer img {
         width: 34px;
+    }
+
+    footer p, footer p a {
+        font-size: 10px !important;
     }
 
     /* === MAP === */
