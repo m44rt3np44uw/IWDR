@@ -93,6 +93,25 @@ nav input[type=checkbox], nav label.menu {
     display: none;
 }
 
+nav label.menu {
+    background-image: url("../img/menu_down.png");
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+nav input[type=checkbox]:checked + label {
+    background-image: url("../img/menu_up.png");
+}
+
+nav input[type=checkbox]:checked + label:hover {
+    background-image: url("../img/menu_up_hover.png");
+}
+
+nav label.menu:hover {
+    background-image: url("../img/menu_down_hover.png");
+}
+
 nav ul li a, nav label.menu {
     border: solid 1px orange;
     float: left;
