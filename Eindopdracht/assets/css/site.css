@@ -13,7 +13,6 @@
 
   === */
 
-
 /* === GLOBAL === */
 
 body {
@@ -57,7 +56,6 @@ iframe {
 .column {
     position: relative;
     float: left;
-
     display: table-cell;
     vertical-align:middle;
     text-align:center;
@@ -89,8 +87,25 @@ nav ul {
     margin-bottom: 50px;
 }
 
-nav input[type=checkbox], nav label.menu {
+nav input#menu[type=checkbox], nav label.menu {
     display: none;
+}
+
+nav label.menu {
+    background: right 10px center no-repeat url("../img/menu_down.png");
+    background-size: 15px;
+}
+
+nav input#menu[type=checkbox]:checked + label.menu {
+    background-image: url("../img/menu_up.png");
+}
+
+nav input#menu[type=checkbox]:checked + label.menu:hover {
+    background-image: url("../img/menu_up_hover.png");
+}
+
+nav label.menu:hover {
+    background-image: url("../img/menu_down_hover.png");
 }
 
 nav ul li a, nav label.menu {
@@ -464,7 +479,7 @@ footer .dash {
         width: 90%;
     }
 
-    input[type=checkbox]:checked ~ ul li
+    input#menu[type=checkbox]:checked ~ ul li
     {
         display: inline;
     }
