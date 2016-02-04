@@ -5,11 +5,12 @@
     3. = MENU
     4. = VIDEO
     5. = INFO
-    6. = TICKETS
-    7. = ROUTE
-    8. = INSTAGRAM
-    9. = FOOTER
-   10. = MAP
+    6. = PERS
+    7. = TICKETS
+    8. = ROUTE
+    9. = INSTAGRAM
+   10. = FOOTER
+   11. = MAP
 
   === */
 
@@ -154,10 +155,6 @@ nav ul li:hover > a {
     margin-top: 150px;
 }
 
-#info.laatste {
-    margin-bottom: 75px;
-}
-
 #info .logo {
     max-width: 250px;
 }
@@ -169,6 +166,52 @@ nav ul li:hover > a {
 }
 
 #info a:hover {
+    text-decoration: underline;
+}
+
+/* === PERS === */
+
+#pers {
+    margin-top: 35px;
+}
+
+#pers blockquote {
+    margin-bottom: 35px;
+}
+
+#pers blockquote p {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+#pers blockquote p:before {
+    content: open-quote;
+}
+
+#pers blockquote p:after {
+    content: close-quote;
+}
+
+#pers blockquote cite:before {
+    content: "- ";
+}
+
+#pers blockquote cite {
+    color: orange;
+}
+
+#pers.laatste {
+    margin-bottom: 75px;
+}
+
+#pers a {
+    margin-top: 50px;
+    color: orange;
+    text-decoration: none;
+    display: block;
+}
+
+#pers a:hover {
     text-decoration: underline;
 }
 
@@ -439,7 +482,7 @@ footer .dash {
         line-height: 35px;
     }
 
-    p, a {
+    p, a, cite {
         font-size: 12px;
     }
 
@@ -522,6 +565,12 @@ footer .dash {
 
     #info {
         margin-top: 75px;
+    }
+
+    /* === PERS === */
+
+    #pers a {
+        margin-top: 10px;
     }
 
     /* === TICKETS === */
